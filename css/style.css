@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    /*
+    font-family: 'Playfair Display', serif;
+    font-family: 'Ubuntu', sans-serif;
+    */
+    font-size: 15px;
+    color: #626262;
+    line-height: 1.6;
+    /*межстрочный отступ*/
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Основной контейнер */
+
+.main_container {
+    margin-left: 68px;
+    margin-right: 68px;
+    /*
+    margin: 0 auto;
+    margin: auto;
+    */
+}
+
+.intro {
+    width: auto;
+    height: 100vh;
+    margin-top: 183px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background: url("../images/intro.jpg") center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/* header */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    margin-top: 60px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 30pt;
+    font-weight: 300;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+/* Раздел навигации */
+
+.nav_panel {
+    text-transform: uppercase;
+    font-size: 14pt;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    color: #626262;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    margin: 0 75px;
+}
+
+.nav_link:last-child {
+    margin-right: 0px;
+}
+
+.nav_link:hover {
+    color: #f70606;
+}
+
+/*
+                Стили для комментариев к статьям/заметкам
+*/
+
+.comments {
+    text-transform: uppercase;
+    font-size: 14pt;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    color: #626262;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.comments:hover {
+    color: #f70606;
+}
+
+/*
+            Вспомогательные контейнеры: текстовый контейнер
+
+*/
+
+.text_container {
+    margin-top: 99px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.text_container h4 {
+    text-transform: uppercase;
+    font-size: 14pt;
+    color: #b4ad9e;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    margin-top: 54px;
+    padding-bottom: 20px;
+}
+
+.text_container h3 {
+    font-size: 30pt;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.text_container p {
+    font-size: 14pt;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    /*
+    Для удобства просмотра
+    */
+    text-align: justify;
+}
+
+/*
+                    Одинарный блок текста
+*/
+
+.single_record {
+    /*
+    На будущее
+    */
+}
+
+/*
+                    Двойной блок текста
+*/
+
+.double_records {
+    margin-top: 115px;
+}
+
+.descriptions {
+    display: flex;
+    justify-content: space-between;
+    /*margin-right: 87px;*/
+}
+
+.description_left, .description_right {
+    width: 600px;
+}
+
+/*
+                    Двойной блок изображений
+*/
+
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image_left {
+    margin-right: 70px;
+}
+
+.images img {
+    display: inline-block;
+    flex: 1 1 auto;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    */
+}
+
+.images img:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+/*
+                    Поле ввода адреса электронной почты для подписки
+*/
+
+.news_letter {
+    margin-top: 125px;
+    text-align: center;
+    background: #f0f0f0;
+    height: 288px;
+    margin-bottom: 200px;
+}
+
+.news_letter h1 {
+    padding-top: 56px;
+    font-size: 30pt;
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    align-items: center;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+
+/*
+.form_send {
+    text-align: center;
+    background: #f0f0f0;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+}
+*/
+
+.edit_news_letter {
+    background-color: #f0f0f0;
+    color: #7a7a7a;
+    border: none;
+    outline: none;
+    width: 450px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+.btn_news_letter {
+    width: 30px;
+    height: 20px;
+    border: none;
+    background: url(../images/send_button.jpg) no-repeat 50% 50%;
+    /* Параметры фона */
+}
+
+.news_letter:after {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 1px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+/*
+
+                    Кнопка перед футером
+
+*/
+
+.load_more {
+    margin-top: 168px;
+    text-align: center;
+}
+
+.btn_load_more {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    display: block;
+    font-size: 20px;
+    color: #707070;
+    letter-spacing: 0.1em;
+    padding: 20px 5px;
+    border: 1px solid #626262;
+    width: 200px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.btn_load_more:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    color: #f70606;
+}
+
+/*
+
+                    Футер
+
+*/
+
+.footer_block {
+    margin-top: 1371px;
+    text-align: center;
+    background: #f0f0f0;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.footer_block_left {
+    margin-left: 108px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_information {
+    font-size: 14pt;
+    margin-top: 35px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    /*align-items: center;*/
+}
+
+.information_link {
+    display: inline-block;
+    vertical-align: top;
+    color: #626262;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    margin: 0 19px;
+}
+
+.information_link:last-child {
+    margin-right: 0px;
+}
+
+.information_link:hover {
+    color: #f70606;
+}
+
+/*
+                        Правая часть футера
+*/
+
+.footer_block_right {
+    margin-left: auto;
+}
+
+.footer_social_networks {
+    padding-right: 50px;
+    font-size: 14pt;
+    margin-top: 35px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+
+.social_networks_link {
+    display: inline-block;
+    vertical-align: top;
+    color: #626262;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    margin: 0 10px;
+    text-align: right;
+}
+
+.social_networks {
+    margin-right: 30px;
+}
+
+.social_networks_link:last-child {
+    margin-right: 0px;
+}
