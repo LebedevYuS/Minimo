@@ -1,14 +1,10 @@
 body {
     margin: 0;
     font-family: 'Inconsolata', monospace;
-    /*
-    font-family: 'Playfair Display', serif;
-    font-family: 'Ubuntu', sans-serif;
-    */
+      
     font-size: 15px;
     color: #626262;
     line-height: 1.6;
-    /*межстрочный отступ*/
 }
 
 *, *:before, *:after {
@@ -24,10 +20,6 @@ h1, h2, h3, h4, h5, h6 {
 .main_container {
     margin-left: 68px;
     margin-right: 68px;
-    /*
-    margin: 0 auto;
-    margin: auto;
-    */
 }
 
 .intro {
@@ -229,16 +221,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: lighter;
     padding-bottom: 50px;
 }
-
-/*
-.form_send {
-    text-align: center;
-    background: #f0f0f0;
-    height: 100px;
-    border-radius: 10px;
-    display: flex;
-}
-*/
 
 .edit_news_letter {
     background-color: #f0f0f0;
